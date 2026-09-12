@@ -1,0 +1,46 @@
+{
+  "schema_version": 3,
+  "generated_at": "2026-09-12T23:19:12.8759739+00:00",
+  "runtime": {
+    "dotnet_major": 10,
+    "min_version": "10.0.0",
+    "installers": {}
+  },
+  "products": {
+    "pixelstudio": {
+      "display_name": "PixelStudio",
+      "dir_name": "PixelStudio",
+      "description": "Non-destructive node-based image editor",
+      "icon_url": "https://releases.artificialnecessity.com/icons/pixelstudio.png",
+      "retain_builds": 3,
+      "signed": false,
+      "channels": {
+        "Daily": "20260912-231859"
+      },
+      "channel_history": {
+        "Daily": [
+          "20260912-231859"
+        ]
+      },
+      "versions": {
+        "20260912-231859": {
+          "published_at": "2026-09-12T23:19:12.8673102+00:00",
+          "release_notes": "first Daily",
+          "notes_url": "https://github.com/ArtificialNecessity/AN_ReleasePublish/releases/tag/pixelstudio-20260912-231859",
+          "pin": false,
+          "assets": {
+            "win-x64": {
+              "entry_executable": "AN.PixelStudio.exe",
+              "zip_url": "https://github.com/ArtificialNecessity/AN_ReleasePublish/releases/download/pixelstudio-20260912-231859/PixelStudio-20260912-231859-win-x64.zip",
+              "zip_sha256": "5aabdc961703a817a2a8817a7f57115ec50d9c441cd3c86fd6d1b5c951e00ae5",
+              "zip_size": 20073773,
+              "filetable_url": "https://github.com/ArtificialNecessity/AN_ReleasePublish/releases/download/pixelstudio-20260912-231859/PixelStudio-20260912-231859-win-x64.filetable.json",
+              "filetable_sha256": "7cbdc9cc883305ccb62031ce84b860d711470a4c7080aa034fc7ae46d3e8e956",
+              "cas_complete": false
+            }
+          }
+        }
+      }
+    }
+  }
+}
