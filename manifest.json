@@ -1,6 +1,6 @@
 {
   "schema_version": 3,
-  "generated_at": "2026-09-12T23:19:12.8759739+00:00",
+  "generated_at": "2026-09-12T23:20:47.3823114+00:00",
   "runtime": {
     "dotnet_major": 10,
     "min_version": "10.0.0",
@@ -15,11 +15,12 @@
       "retain_builds": 3,
       "signed": false,
       "channels": {
-        "Daily": "20260912-231859"
+        "Daily": "20260912-232027"
       },
       "channel_history": {
         "Daily": [
-          "20260912-231859"
+          "20260912-231859",
+          "20260912-232027"
         ]
       },
       "versions": {
@@ -36,6 +37,23 @@
               "zip_size": 20073773,
               "filetable_url": "https://github.com/ArtificialNecessity/AN_ReleasePublish/releases/download/pixelstudio-20260912-231859/PixelStudio-20260912-231859-win-x64.filetable.json",
               "filetable_sha256": "7cbdc9cc883305ccb62031ce84b860d711470a4c7080aa034fc7ae46d3e8e956",
+              "cas_complete": false
+            }
+          }
+        },
+        "20260912-232027": {
+          "published_at": "2026-09-12T23:20:47.3735819+00:00",
+          "release_notes": "first Daily",
+          "notes_url": "https://github.com/ArtificialNecessity/AN_ReleasePublish/releases/tag/pixelstudio-20260912-232027",
+          "pin": false,
+          "assets": {
+            "win-x64": {
+              "entry_executable": "AN.PixelStudio.exe",
+              "zip_url": "https://github.com/ArtificialNecessity/AN_ReleasePublish/releases/download/pixelstudio-20260912-232027/PixelStudio-20260912-232027-win-x64.zip",
+              "zip_sha256": "374de1e4f4b1d2ae8743eaadfa88cade9553a876ca95d14127278ed7e81d4a70",
+              "zip_size": 20073773,
+              "filetable_url": "https://github.com/ArtificialNecessity/AN_ReleasePublish/releases/download/pixelstudio-20260912-232027/PixelStudio-20260912-232027-win-x64.filetable.json",
+              "filetable_sha256": "7aba5e53481a2d40294fcdf5796ec0be4ea32f87f1bd45fd59dc40640be0bf7f",
               "cas_complete": false
             }
           }
