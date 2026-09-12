@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Artificial Necessity — Releases</title>
+<meta name="description" content="Download Artificial Necessity applications. Installers and direct downloads for every release channel.">
+<style>
+  :root { --bg:#0f1115; --panel:#171a21; --line:#262b36; --text:#e6e8ee; --muted:#8b93a7; --accent:#5aa9ff; --accent2:#7ee0a0; --warn:#f5c26b; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font:15px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif; }
+  header { padding:32px 24px 8px; max-width:1100px; margin:0 auto; }
+  header h1 { margin:0 0 4px; font-size:28px; letter-spacing:.2px; }
+  header p { margin:0; color:var(--muted); }
+  main { max-width:1100px; margin:0 auto; padding:16px 24px 64px; }
+  .product { background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:20px 22px; margin:18px 0; }
+  .product-head { display:flex; gap:16px; align-items:center; }
+  .product-head img { width:64px; height:64px; border-radius:12px; background:#0b0d11; flex:none; }
+  .product-head h2 { margin:0; font-size:22px; }
+  .product-head .desc { color:var(--muted); margin:2px 0 0; }
+  .install { margin-left:auto; text-align:right; }
+  .btn { display:inline-block; padding:10px 16px; border-radius:8px; background:var(--accent); color:#06111f; font-weight:600; text-decoration:none; }
+  .btn.disabled { background:#2a3040; color:var(--muted); cursor:default; }
+  .btn small { display:block; font-weight:400; font-size:12px; opacity:.8; }
+  table { width:100%; border-collapse:collapse; margin-top:16px; font-size:14px; }
+  th, td { text-align:left; padding:8px 10px; border-top:1px solid var(--line); vertical-align:top; }
+  th { color:var(--muted); font-weight:500; border-top:none; }
+  .chan { font-weight:600; }
+  .chan.Live { color:var(--accent2); } .chan.Canary { color:var(--warn); } .chan.Daily { color:var(--accent); }
+  .ver { font-family:ui-monospace,Consolas,monospace; }
+  .muted { color:var(--muted); }
+  .dl a { color:var(--accent); text-decoration:none; } .dl a:hover { text-decoration:underline; }
+  .hash { font-family:ui-monospace,Consolas,monospace; font-size:12px; color:var(--muted); }
+  details { margin-top:12px; } summary { cursor:pointer; color:var(--muted); }
+  .pill { display:inline-block; font-size:11px; padding:1px 7px; border-radius:999px; border:1px solid var(--line); color:var(--muted); margin-left:6px; vertical-align:middle; }
+  footer { color:var(--muted); font-size:13px; margin-top:32px; }
+  #status { color:var(--muted); }
+</style>
+</head>
+<body>
+<header>
+  <h1>Artificial Necessity — Releases</h1>
+  <p>Installers and direct downloads for every product and channel. <span id="status">Loading manifest…</span></p>
+</header>
+<main id="products"></main>
+<script>
+(async function () {
+  const statusEl = document.getElementById('status');
+  const root = document.getElementById('products');
+  let manifest;
+  try {
+    const response = await fetch('manifest.json', { cache: 'no-cache' });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    manifest = await response.json();
+  } catch (error) {
+    statusEl.textContent = `Could not load manifest.json (${error.message}).`;
+    return;
+  }
+  const generated = manifest.generated_at ? new Date(manifest.generated_at) : null;
+  statusEl.textContent = generated ? `Manifest updated ${generated.toLocaleString()} (schema ${manifest.schema_version}).` : '';
+
+  const channelOrder = ['Live', 'Canary', 'Daily'];
+  const platformLabel = { 'win-x64': 'Windows x64', 'osx-arm64': 'macOS (Apple silicon)', 'linux-x64': 'Linux x64' };
+  const fmtBytes = (n) => n >= 1048576 ? (n / 1048576).toFixed(1) + ' MB' : n >= 1024 ? (n / 1024).toFixed(0) + ' KB' : n + ' B';
+  const fmtVersion = (v) => v; // yyyyMMdd-HHmmss UTC build timestamp
+  const versionDate = (v) => { const m = /^(\d{4})(\d{2})(\d{2})-(\d{2})(\d{2})(\d{2})$/.exec(v); return m ? new Date(Date.UTC(+m[1], m[2]-1, +m[3], +m[4], +m[5], +m[6])).toLocaleString() : ''; };
+  const el = (tag, attrs = {}, ...children) => { const node = document.createElement(tag); for (const [k, v] of Object.entries(attrs)) { if (k === 'class') node.className = v; else if (k === 'html') node.innerHTML = v; else node.setAttribute(k, v); } for (const c of children) if (c != null) node.append(c); return node; };
+
+  const products = Object.entries(manifest.products || {}).sort(([a], [b]) => a.localeCompare(b));
+  if (products.length === 0) root.append(el('p', { class: 'muted' }, 'No products published yet.'));
+
+  for (const [productId, product] of products) {
+    const card = el('section', { class: 'product', id: productId });
+    const head = el('div', { class: 'product-head' });
+    if (product.icon_url) head.append(el('img', { src: product.icon_url, alt: '' }));
+    head.append(el('div', {}, el('h2', {}, product.display_name || productId), el('p', { class: 'desc' }, product.description || '')));
+    const install = el('div', { class: 'install' });
+    if (product.shim_url) {
+      install.append(el('a', { class: 'btn', href: product.shim_url }, 'Download installer', el('small', {}, 'Windows · installs the Live channel')));
+    } else {
+      install.append(el('span', { class: 'btn disabled' }, 'Installer coming soon', el('small', {}, 'use a direct download below')));
+    }
+    head.append(install);
+    card.append(head);
+
+    const channels = Object.entries(product.channels || {}).sort(([a], [b]) => (channelOrder.indexOf(a) + 100 * (channelOrder.indexOf(a) < 0)) - (channelOrder.indexOf(b) + 100 * (channelOrder.indexOf(b) < 0)));
+    const table = el('table', {}, el('thead', {}, el('tr', {}, el('th', {}, 'Channel'), el('th', {}, 'Version'), el('th', {}, 'Downloads'), el('th', {}, 'Notes'))));
+    const tbody = el('tbody');
+    for (const [channel, version] of channels) {
+      const entry = (product.versions || {})[version];
+      const downloads = el('td', { class: 'dl' });
+      if (entry && entry.assets) {
+        for (const [platform, asset] of Object.entries(entry.assets)) {
+          const row = el('div', {},
+            el('a', { href: asset.zip_url, title: `sha256 ${asset.zip_sha256}` }, `${platformLabel[platform] || platform} zip`),
+            el('span', { class: 'muted' }, asset.zip_size ? ` (${fmtBytes(asset.zip_size)})` : ''),
+            asset.filetable_url ? el('span', { class: 'muted' }, ' · ', el('a', { href: asset.filetable_url }, 'filetable')) : null,
+            asset.cas_complete === false ? el('span', { class: 'pill', title: 'Published zip-only; delta (CAS) objects not uploaded for this version.' }, 'zip-only') : null);
+          downloads.append(row);
+          downloads.append(el('div', { class: 'hash' }, `sha256 ${asset.zip_sha256}`));
+        }
+      } else {
+        downloads.append(el('span', { class: 'muted' }, 'version pruned from manifest'));
+      }
+      const notes = el('td', {},
+        entry && entry.release_notes ? el('div', {}, entry.release_notes) : null,
+        entry && entry.notes_url ? el('a', { class: 'muted', href: entry.notes_url }, 'release page') : null);
+      tbody.append(el('tr', {},
+        el('td', {}, el('span', { class: `chan ${channel}` }, channel)),
+        el('td', {}, el('div', { class: 'ver' }, fmtVersion(version)), el('div', { class: 'muted' }, versionDate(version))),
+        downloads, notes));
+    }
+    if (channels.length === 0) tbody.append(el('tr', {}, el('td', { colspan: '4', class: 'muted' }, 'No channel pointers yet.')));
+    table.append(tbody);
+    card.append(table);
+
+    const allVersions = Object.keys(product.versions || {}).sort().reverse();
+    const pointed = new Set(Object.values(product.channels || {}));
+    const others = allVersions.filter(v => !pointed.has(v));
+    if (others.length) {
+      const list = el('ul');
+      for (const version of others) {
+        const entry = product.versions[version];
+        const item = el('li', {}, el('span', { class: 'ver' }, version), el('span', { class: 'muted' }, ` ${versionDate(version)} `));
+        for (const [platform, asset] of Object.entries(entry.assets || {})) item.append(el('span', { class: 'dl' }, ' · ', el('a', { href: asset.zip_url }, `${platformLabel[platform] || platform} zip`)));
+        if (entry.pin) item.append(el('span', { class: 'pill' }, 'pinned'));
+        list.append(item);
+      }
+      card.append(el('details', {}, el('summary', {}, `${others.length} older version${others.length > 1 ? 's' : ''} still available`), list));
+    }
+    root.append(card);
+  }
+  root.append(el('footer', {}, 'Versions are UTC build timestamps (yyyyMMdd-HHmmss). Live is promoted from Canary after testing; Canary and Daily are pre-release. Verify downloads against the listed sha256. ',
+    el('a', { class: 'muted', href: 'manifest.json' }, 'manifest.json')));
+})();
+</script>
+</body>
+</html>
