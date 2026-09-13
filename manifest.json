@@ -1,6 +1,6 @@
 {
   "schema_version": 3,
-  "generated_at": "2026-09-13T03:44:49.7898628+00:00",
+  "generated_at": "2026-09-13T03:58:00.4847283+00:00",
   "runtime": {
     "dotnet_major": 10,
     "min_version": "10.0.0",
@@ -77,16 +77,18 @@
       "retain_builds": 2,
       "signed": true,
       "channels": {
-        "Daily": "20260913-034105",
-        "Canary": "20260913-034105",
+        "Daily": "20260913-035720",
+        "Canary": "20260913-035720",
         "Live": "20260913-034105"
       },
       "channel_history": {
         "Daily": [
-          "20260913-034105"
+          "20260913-034105",
+          "20260913-035720"
         ],
         "Canary": [
-          "20260913-034105"
+          "20260913-034105",
+          "20260913-035720"
         ],
         "Live": [
           "20260913-034105"
@@ -106,6 +108,23 @@
               "zip_size": 16698481,
               "filetable_url": "https://github.com/ArtificialNecessity/AN_ReleasePublish/releases/download/an-updater-20260913-034105/ANUpdater-20260913-034105-win-x64.filetable.json",
               "filetable_sha256": "941cb9cb24394a13dc6f259f13995ada2446fdd687eaa2213c41c7e61e27a774",
+              "cas_complete": true
+            }
+          }
+        },
+        "20260913-035720": {
+          "published_at": "2026-09-13T03:58:00.4764949+00:00",
+          "release_notes": "ipc-ready hand-off, start menu self-registration",
+          "notes_url": "https://github.com/ArtificialNecessity/AN_ReleasePublish/releases/tag/an-updater-20260913-035720",
+          "pin": false,
+          "assets": {
+            "win-x64": {
+              "entry_executable": "ANUpdater.exe",
+              "zip_url": "https://github.com/ArtificialNecessity/AN_ReleasePublish/releases/download/an-updater-20260913-035720/ANUpdater-20260913-035720-win-x64.zip",
+              "zip_sha256": "939ab39b1d96daea1a9ba1b28189413e10a4108037b8a43020d7a9e26c0974f0",
+              "zip_size": 16775438,
+              "filetable_url": "https://github.com/ArtificialNecessity/AN_ReleasePublish/releases/download/an-updater-20260913-035720/ANUpdater-20260913-035720-win-x64.filetable.json",
+              "filetable_sha256": "dfb439cbae395051dcce4fa8376d1f4254e80fdeb8866111ff90ebc408cff62f",
               "cas_complete": true
             }
           }
