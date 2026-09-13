@@ -1,10 +1,19 @@
 {
   "schema_version": 3,
-  "generated_at": "2026-09-12T23:20:47.3823114+00:00",
+  "generated_at": "2026-09-13T03:43:33.4788984+00:00",
   "runtime": {
     "dotnet_major": 10,
     "min_version": "10.0.0",
-    "installers": {}
+    "installers": {
+      "win-x64": {
+        "url": "https://builds.dotnet.microsoft.com/dotnet/Runtime/10.0.12/dotnet-runtime-10.0.12-win-x64.exe",
+        "sha512": "b937ae539c4ab21f885b033178dadea98018baad777252c76251e760d81c18463b2f802e86b6a67ea066690e9ede2d66a6bc3c3e614e391505e98c4c41121400"
+      },
+      "win-arm64": {
+        "url": "https://builds.dotnet.microsoft.com/dotnet/Runtime/10.0.12/dotnet-runtime-10.0.12-win-arm64.exe",
+        "sha512": "45c8fcf4102c5c0d36bd9a85f9f35f10225f37415bf2479cf85b9f460b8a8e279d9e9210c5e7ac53604aea19e4aafa8ae35279f6bbfaf31816f6f27c1f2750df"
+      }
+    }
   },
   "products": {
     "pixelstudio": {
@@ -55,6 +64,45 @@
               "filetable_url": "https://github.com/ArtificialNecessity/AN_ReleasePublish/releases/download/pixelstudio-20260912-232027/PixelStudio-20260912-232027-win-x64.filetable.json",
               "filetable_sha256": "7aba5e53481a2d40294fcdf5796ec0be4ea32f87f1bd45fd59dc40640be0bf7f",
               "cas_complete": false
+            }
+          }
+        }
+      }
+    },
+    "an-updater": {
+      "display_name": "Artificial Necessity Apps",
+      "dir_name": "ANUpdater",
+      "description": "Installs and updates Artificial Necessity applications",
+      "icon_url": "https://releases.artificialnecessity.com/icons/an-updater.png",
+      "retain_builds": 2,
+      "signed": true,
+      "channels": {
+        "Daily": "20260913-034105",
+        "Canary": "20260913-034105"
+      },
+      "channel_history": {
+        "Daily": [
+          "20260913-034105"
+        ],
+        "Canary": [
+          "20260913-034105"
+        ]
+      },
+      "versions": {
+        "20260913-034105": {
+          "published_at": "2026-09-13T03:43:33.4712223+00:00",
+          "release_notes": "first updater",
+          "notes_url": "https://github.com/ArtificialNecessity/AN_ReleasePublish/releases/tag/an-updater-20260913-034105",
+          "pin": false,
+          "assets": {
+            "win-x64": {
+              "entry_executable": "ANUpdater.exe",
+              "zip_url": "https://github.com/ArtificialNecessity/AN_ReleasePublish/releases/download/an-updater-20260913-034105/ANUpdater-20260913-034105-win-x64.zip",
+              "zip_sha256": "1888a71fbd7df36651bbf5c06f1183e7b01584e3f0bdd5817fc922720db470cd",
+              "zip_size": 16698481,
+              "filetable_url": "https://github.com/ArtificialNecessity/AN_ReleasePublish/releases/download/an-updater-20260913-034105/ANUpdater-20260913-034105-win-x64.filetable.json",
+              "filetable_sha256": "941cb9cb24394a13dc6f259f13995ada2446fdd687eaa2213c41c7e61e27a774",
+              "cas_complete": true
             }
           }
         }
