@@ -1,6 +1,6 @@
 {
   "schema_version": 3,
-  "generated_at": "2026-09-13T04:00:45.7045576+00:00",
+  "generated_at": "2026-09-13T04:01:19.1151871+00:00",
   "runtime": {
     "dotnet_major": 10,
     "min_version": "10.0.0",
@@ -21,6 +21,7 @@
       "dir_name": "PixelStudio",
       "description": "Non-destructive node-based image editor",
       "icon_url": "https://releases.artificialnecessity.com/icons/pixelstudio.png",
+      "shim_url": "https://github.com/ArtificialNecessity/AN_ReleasePublish/releases/download/shims/PixelStudio-Setup.exe",
       "retain_builds": 3,
       "signed": false,
       "channels": {
