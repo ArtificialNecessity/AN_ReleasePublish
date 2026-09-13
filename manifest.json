@@ -1,6 +1,6 @@
 {
   "schema_version": 3,
-  "generated_at": "2026-09-13T04:40:39.2971155+00:00",
+  "generated_at": "2026-09-13T04:40:47.3401417+00:00",
   "runtime": {
     "dotnet_major": 10,
     "min_version": "10.0.0",
@@ -25,11 +25,15 @@
       "retain_builds": 3,
       "signed": false,
       "channels": {
-        "Daily": "20260912-232027"
+        "Daily": "20260912-232027",
+        "Canary": "20260912-232027"
       },
       "channel_history": {
         "Daily": [
           "20260912-231859",
+          "20260912-232027"
+        ],
+        "Canary": [
           "20260912-232027"
         ]
       },
