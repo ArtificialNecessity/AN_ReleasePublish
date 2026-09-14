@@ -1,6 +1,6 @@
 {
   "schema_version": 3,
-  "generated_at": "2026-09-14T05:54:55.3665177+00:00",
+  "generated_at": "2026-09-14T05:57:01.2995994+00:00",
   "runtime": {
     "dotnet_major": 10,
     "min_version": "10.0.0",
@@ -211,16 +211,18 @@
       "signed": false,
       "listed": true,
       "channels": {
-        "Daily": "20260914-054612",
-        "Canary": "20260914-054612",
+        "Daily": "20260914-055629",
+        "Canary": "20260914-055629",
         "Live": "20260914-054612"
       },
       "channel_history": {
         "Daily": [
-          "20260914-054612"
+          "20260914-054612",
+          "20260914-055629"
         ],
         "Canary": [
-          "20260914-054612"
+          "20260914-054612",
+          "20260914-055629"
         ],
         "Live": [
           "20260914-054612"
@@ -240,6 +242,23 @@
               "zip_size": 33299870,
               "filetable_url": "https://github.com/ArtificialNecessity/AN_ReleasePublish/releases/download/musicstudio-20260914-054612/MusicStudio-20260914-054612-win-x64.filetable.json",
               "filetable_sha256": "92c8aefc5309d3e971fd0214a0a0ece7bf0ba810cdae3ff66f38d3fb7c57e32e",
+              "cas_complete": true
+            }
+          }
+        },
+        "20260914-055629": {
+          "published_at": "2026-09-14T05:57:01.291524+00:00",
+          "release_notes": "app icon",
+          "notes_url": "https://github.com/ArtificialNecessity/AN_ReleasePublish/releases/tag/musicstudio-20260914-055629",
+          "pin": false,
+          "assets": {
+            "win-x64": {
+              "entry_executable": "AN.MusicStudio.exe",
+              "zip_url": "https://github.com/ArtificialNecessity/AN_ReleasePublish/releases/download/musicstudio-20260914-055629/MusicStudio-20260914-055629-win-x64.zip",
+              "zip_sha256": "d212c99423a3814e720d1f7241117958b2f35ca4f03cb2e8c61f9a255a92e5ec",
+              "zip_size": 33310134,
+              "filetable_url": "https://github.com/ArtificialNecessity/AN_ReleasePublish/releases/download/musicstudio-20260914-055629/MusicStudio-20260914-055629-win-x64.filetable.json",
+              "filetable_sha256": "9d6de0a30c47216499cb5089b417f237505bfa782fe542d857d08acd8d1169ff",
               "cas_complete": true
             }
           }
