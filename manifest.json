@@ -1,6 +1,6 @@
 {
   "schema_version": 3,
-  "generated_at": "2026-09-14T05:57:49.0529249+00:00",
+  "generated_at": "2026-09-14T15:56:54.6776004+00:00",
   "runtime": {
     "dotnet_major": 10,
     "min_version": "10.0.0",
@@ -88,8 +88,8 @@
       "signed": true,
       "listed": true,
       "channels": {
-        "Daily": "20260913-043932",
-        "Canary": "20260913-043932",
+        "Daily": "20260914-155623",
+        "Canary": "20260914-155623",
         "Live": "20260913-043932"
       },
       "channel_history": {
@@ -98,14 +98,16 @@
           "20260913-035720",
           "20260913-035825",
           "20260913-035908",
-          "20260913-043932"
+          "20260913-043932",
+          "20260914-155623"
         ],
         "Canary": [
           "20260913-034105",
           "20260913-035720",
           "20260913-035825",
           "20260913-035908",
-          "20260913-043932"
+          "20260913-043932",
+          "20260914-155623"
         ],
         "Live": [
           "20260913-034105",
@@ -195,6 +197,23 @@
               "zip_size": 16778171,
               "filetable_url": "https://github.com/ArtificialNecessity/AN_ReleasePublish/releases/download/an-updater-20260913-043932/ANUpdater-20260913-043932-win-x64.filetable.json",
               "filetable_sha256": "ad2b505d8284ee7732248980d1eda47ec73849d866ca62c5f4a279dc660541f1",
+              "cas_complete": true
+            }
+          }
+        },
+        "20260914-155623": {
+          "published_at": "2026-09-14T15:56:54.6689548+00:00",
+          "release_notes": "Write an-install.jsonc channel stamp at install (spec 02); --install-dev verb; UpdaterSelfVersion",
+          "notes_url": "https://github.com/ArtificialNecessity/AN_ReleasePublish/releases/tag/an-updater-20260914-155623",
+          "pin": false,
+          "assets": {
+            "win-x64": {
+              "entry_executable": "ANUpdater.exe",
+              "zip_url": "https://github.com/ArtificialNecessity/AN_ReleasePublish/releases/download/an-updater-20260914-155623/ANUpdater-20260914-155623-win-x64.zip",
+              "zip_sha256": "7d88f373db011bd67488286f64e261062a1c39bab1ad335f040ec00bf4ef452c",
+              "zip_size": 16790411,
+              "filetable_url": "https://github.com/ArtificialNecessity/AN_ReleasePublish/releases/download/an-updater-20260914-155623/ANUpdater-20260914-155623-win-x64.filetable.json",
+              "filetable_sha256": "59af3d019eca4813ef12833dd42ac986b06dcec4faa7d58d29c0bfb6c97e7d10",
               "cas_complete": true
             }
           }
