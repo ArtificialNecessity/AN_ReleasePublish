@@ -1,6 +1,6 @@
 {
   "schema_version": 3,
-  "generated_at": "2026-09-13T04:40:57.7772738+00:00",
+  "generated_at": "2026-09-14T05:48:19.3261862+00:00",
   "runtime": {
     "dotnet_major": 10,
     "min_version": "10.0.0",
@@ -24,6 +24,7 @@
       "shim_url": "https://github.com/ArtificialNecessity/AN_ReleasePublish/releases/download/shims/PixelStudio-Setup.exe",
       "retain_builds": 3,
       "signed": false,
+      "listed": true,
       "channels": {
         "Daily": "20260912-232027",
         "Canary": "20260912-232027",
@@ -85,6 +86,7 @@
       "icon_url": "https://releases.artificialnecessity.com/icons/an-updater.png",
       "retain_builds": 2,
       "signed": true,
+      "listed": true,
       "channels": {
         "Daily": "20260913-043932",
         "Canary": "20260913-043932",
@@ -193,6 +195,46 @@
               "zip_size": 16778171,
               "filetable_url": "https://github.com/ArtificialNecessity/AN_ReleasePublish/releases/download/an-updater-20260913-043932/ANUpdater-20260913-043932-win-x64.filetable.json",
               "filetable_sha256": "ad2b505d8284ee7732248980d1eda47ec73849d866ca62c5f4a279dc660541f1",
+              "cas_complete": true
+            }
+          }
+        }
+      }
+    },
+    "musicstudio": {
+      "display_name": "MusicStudio",
+      "dir_name": "MusicStudio",
+      "description": "Node-based music studio: tracker, synths, MIDI",
+      "icon_url": "https://releases.artificialnecessity.com/icons/musicstudio.png",
+      "retain_builds": 3,
+      "signed": false,
+      "listed": true,
+      "channels": {
+        "Daily": "20260914-054612",
+        "Canary": "20260914-054612"
+      },
+      "channel_history": {
+        "Daily": [
+          "20260914-054612"
+        ],
+        "Canary": [
+          "20260914-054612"
+        ]
+      },
+      "versions": {
+        "20260914-054612": {
+          "published_at": "2026-09-14T05:48:19.3183652+00:00",
+          "release_notes": "first MusicStudio release",
+          "notes_url": "https://github.com/ArtificialNecessity/AN_ReleasePublish/releases/tag/musicstudio-20260914-054612",
+          "pin": false,
+          "assets": {
+            "win-x64": {
+              "entry_executable": "AN.MusicStudio.exe",
+              "zip_url": "https://github.com/ArtificialNecessity/AN_ReleasePublish/releases/download/musicstudio-20260914-054612/MusicStudio-20260914-054612-win-x64.zip",
+              "zip_sha256": "4a82797724c35d5eb07732ce8795c87ad32b4b7a4f3db28703a744be58b33de0",
+              "zip_size": 33299870,
+              "filetable_url": "https://github.com/ArtificialNecessity/AN_ReleasePublish/releases/download/musicstudio-20260914-054612/MusicStudio-20260914-054612-win-x64.filetable.json",
+              "filetable_sha256": "92c8aefc5309d3e971fd0214a0a0ece7bf0ba810cdae3ff66f38d3fb7c57e32e",
               "cas_complete": true
             }
           }
