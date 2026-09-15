@@ -1,6 +1,6 @@
 {
   "schema_version": 3,
-  "generated_at": "2026-09-15T01:37:09.8717847+00:00",
+  "generated_at": "2026-09-15T01:48:03.4938541+00:00",
   "runtime": {
     "dotnet_major": 10,
     "min_version": "10.0.0",
@@ -380,6 +380,7 @@
       "dir_name": "SafePDF",
       "description": "100% managed-code PDF viewer",
       "icon_url": "https://releases.artificialnecessity.com/icons/safepdf.png",
+      "shim_url": "https://github.com/ArtificialNecessity/AN_ReleasePublish/releases/download/shims/SafePDF-Setup.exe",
       "retain_builds": 3,
       "signed": false,
       "listed": true,
