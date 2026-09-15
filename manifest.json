@@ -1,6 +1,6 @@
 {
   "schema_version": 3,
-  "generated_at": "2026-09-15T01:12:38.8972667+00:00",
+  "generated_at": "2026-09-15T01:26:20.2760274+00:00",
   "runtime": {
     "dotnet_major": 10,
     "min_version": "10.0.0",
@@ -303,6 +303,47 @@
               "zip_size": 33310134,
               "filetable_url": "https://github.com/ArtificialNecessity/AN_ReleasePublish/releases/download/musicstudio-20260914-055629/MusicStudio-20260914-055629-win-x64.filetable.json",
               "filetable_sha256": "9d6de0a30c47216499cb5089b417f237505bfa782fe542d857d08acd8d1169ff",
+              "cas_complete": true
+            }
+          }
+        }
+      }
+    },
+    "mirica": {
+      "display_name": "Mirica",
+      "dir_name": "Mirica",
+      "description": "Human-AI collaboration workspace: chat, code, terminal, agents",
+      "icon_url": "https://releases.artificialnecessity.com/icons/mirica.png",
+      "takeover_pipe_name": "MiricaDesktop",
+      "retain_builds": 3,
+      "signed": false,
+      "listed": true,
+      "channels": {
+        "Daily": "20260915-011553",
+        "Canary": "20260915-011553"
+      },
+      "channel_history": {
+        "Daily": [
+          "20260915-011553"
+        ],
+        "Canary": [
+          "20260915-011553"
+        ]
+      },
+      "versions": {
+        "20260915-011553": {
+          "published_at": "2026-09-15T01:26:20.2685091+00:00",
+          "release_notes": "",
+          "notes_url": "https://github.com/ArtificialNecessity/AN_ReleasePublish/releases/tag/mirica-20260915-011553",
+          "pin": false,
+          "assets": {
+            "win-x64": {
+              "entry_executable": "Mirica.Desktop.exe",
+              "zip_url": "https://github.com/ArtificialNecessity/AN_ReleasePublish/releases/download/mirica-20260915-011553/Mirica-20260915-011553-win-x64.zip",
+              "zip_sha256": "e544a485f43a2bab9509ada7033422bbbf06a5d01a077a1737e8f6aa690571a2",
+              "zip_size": 74603074,
+              "filetable_url": "https://github.com/ArtificialNecessity/AN_ReleasePublish/releases/download/mirica-20260915-011553/Mirica-20260915-011553-win-x64.filetable.json",
+              "filetable_sha256": "12a825e6207d42d7ab950d9ee22e1097b53ab0bfa21a92c26b0fe44d579cb92b",
               "cas_complete": true
             }
           }
