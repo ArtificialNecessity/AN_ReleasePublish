@@ -1,6 +1,6 @@
 {
   "schema_version": 3,
-  "generated_at": "2026-09-15T01:27:45.3904422+00:00",
+  "generated_at": "2026-09-15T01:29:59.972095+00:00",
   "runtime": {
     "dotnet_major": 10,
     "min_version": "10.0.0",
@@ -349,6 +349,46 @@
               "zip_size": 74603074,
               "filetable_url": "https://github.com/ArtificialNecessity/AN_ReleasePublish/releases/download/mirica-20260915-011553/Mirica-20260915-011553-win-x64.filetable.json",
               "filetable_sha256": "12a825e6207d42d7ab950d9ee22e1097b53ab0bfa21a92c26b0fe44d579cb92b",
+              "cas_complete": true
+            }
+          }
+        }
+      }
+    },
+    "safepdf": {
+      "display_name": "SafePDF",
+      "dir_name": "SafePDF",
+      "description": "100% managed-code PDF viewer",
+      "icon_url": "https://releases.artificialnecessity.com/icons/safepdf.png",
+      "retain_builds": 3,
+      "signed": false,
+      "listed": true,
+      "channels": {
+        "Daily": "20260915-012810",
+        "Canary": "20260915-012810"
+      },
+      "channel_history": {
+        "Daily": [
+          "20260915-012810"
+        ],
+        "Canary": [
+          "20260915-012810"
+        ]
+      },
+      "versions": {
+        "20260915-012810": {
+          "published_at": "2026-09-15T01:29:59.9642568+00:00",
+          "release_notes": "",
+          "notes_url": "https://github.com/ArtificialNecessity/AN_ReleasePublish/releases/tag/safepdf-20260915-012810",
+          "pin": false,
+          "assets": {
+            "win-x64": {
+              "entry_executable": "AN.SafePdfViewer.exe",
+              "zip_url": "https://github.com/ArtificialNecessity/AN_ReleasePublish/releases/download/safepdf-20260915-012810/SafePDF-20260915-012810-win-x64.zip",
+              "zip_sha256": "66d979f646388d4549f5b6978c5b6b9165513f5622b23f51cc88c96cc8eda0b9",
+              "zip_size": 34963232,
+              "filetable_url": "https://github.com/ArtificialNecessity/AN_ReleasePublish/releases/download/safepdf-20260915-012810/SafePDF-20260915-012810-win-x64.filetable.json",
+              "filetable_sha256": "a2542657cff195c1d8b20a11d1d9b4e70a0be4cb04f56077ab43ce214d3275b9",
               "cas_complete": true
             }
           }
