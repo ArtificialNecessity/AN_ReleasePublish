@@ -1,6 +1,6 @@
 {
   "schema_version": 3,
-  "generated_at": "2026-09-15T01:26:51.3469475+00:00",
+  "generated_at": "2026-09-15T01:27:45.3904422+00:00",
   "runtime": {
     "dotnet_major": 10,
     "min_version": "10.0.0",
@@ -314,6 +314,7 @@
       "dir_name": "Mirica",
       "description": "Human-AI collaboration workspace: chat, code, terminal, agents",
       "icon_url": "https://releases.artificialnecessity.com/icons/mirica.png",
+      "shim_url": "https://github.com/ArtificialNecessity/AN_ReleasePublish/releases/download/shims/Mirica-Setup.exe",
       "takeover_pipe_name": "MiricaDesktop",
       "retain_builds": 3,
       "signed": false,
