@@ -1,6 +1,6 @@
 {
   "schema_version": 3,
-  "generated_at": "2026-09-15T01:48:03.4938541+00:00",
+  "generated_at": "2026-09-15T02:28:37.466399+00:00",
   "runtime": {
     "dotnet_major": 10,
     "min_version": "10.0.0",
@@ -414,6 +414,47 @@
               "zip_size": 34963232,
               "filetable_url": "https://github.com/ArtificialNecessity/AN_ReleasePublish/releases/download/safepdf-20260915-012810/SafePDF-20260915-012810-win-x64.filetable.json",
               "filetable_sha256": "a2542657cff195c1d8b20a11d1d9b4e70a0be4cb04f56077ab43ce214d3275b9",
+              "cas_complete": true
+            }
+          }
+        }
+      }
+    },
+    "maestro": {
+      "display_name": "Maestro",
+      "dir_name": "Maestro",
+      "description": "Mirica Desktop Coordinator and tabbed application manager",
+      "icon_url": "https://releases.artificialnecessity.com/icons/maestro.png",
+      "takeover_pipe_name": "MiricaCoordinator",
+      "retain_builds": 3,
+      "signed": false,
+      "listed": true,
+      "channels": {
+        "Daily": "20260915-022718",
+        "Canary": "20260915-022718"
+      },
+      "channel_history": {
+        "Daily": [
+          "20260915-022718"
+        ],
+        "Canary": [
+          "20260915-022718"
+        ]
+      },
+      "versions": {
+        "20260915-022718": {
+          "published_at": "2026-09-15T02:28:37.4562933+00:00",
+          "release_notes": "",
+          "notes_url": "https://github.com/ArtificialNecessity/AN_ReleasePublish/releases/tag/maestro-20260915-022718",
+          "pin": false,
+          "assets": {
+            "win-x64": {
+              "entry_executable": "ArtificialNecessity.MiricaDesktopCoordinator.exe",
+              "zip_url": "https://github.com/ArtificialNecessity/AN_ReleasePublish/releases/download/maestro-20260915-022718/Maestro-20260915-022718-win-x64.zip",
+              "zip_sha256": "f3f5db049dd8e24133d29a8c89fe309dc7ff0ebdab636dcdefdfa080024e8b65",
+              "zip_size": 15052107,
+              "filetable_url": "https://github.com/ArtificialNecessity/AN_ReleasePublish/releases/download/maestro-20260915-022718/Maestro-20260915-022718-win-x64.filetable.json",
+              "filetable_sha256": "4df67c5a8eff71ca0cc2cd00e7a3a6f70667910f2502101423f144cdf1785f85",
               "cas_complete": true
             }
           }
