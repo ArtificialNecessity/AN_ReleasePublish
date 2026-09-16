@@ -1,6 +1,6 @@
 {
   "schema_version": 3,
-  "generated_at": "2026-09-16T01:03:11.6927254+00:00",
+  "generated_at": "2026-09-16T01:09:44.1515493+00:00",
   "runtime": {
     "dotnet_major": 10,
     "min_version": "10.0.0",
@@ -466,6 +466,7 @@
       "dir_name": "Monitor",
       "description": "Sable process \u0026 vitals monitor",
       "icon_url": "https://releases.artificialnecessity.com/icons/monitor.png",
+      "shim_url": "https://github.com/ArtificialNecessity/AN_ReleasePublish/releases/download/shims/Monitor-Setup.exe",
       "retain_builds": 3,
       "signed": false,
       "listed": true,
