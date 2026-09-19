@@ -1,6 +1,6 @@
 {
   "schema_version": 3,
-  "generated_at": "2026-09-18T20:07:26.3194167+00:00",
+  "generated_at": "2026-09-19T16:04:25.8332641+00:00",
   "runtime": {
     "dotnet_major": 10,
     "min_version": "10.0.0",
@@ -510,16 +510,18 @@
       "signed": false,
       "listed": true,
       "channels": {
-        "Daily": "20260916-010127",
-        "Canary": "20260916-010127",
+        "Daily": "20260919-160338",
+        "Canary": "20260919-160338",
         "Live": "20260916-010127"
       },
       "channel_history": {
         "Daily": [
-          "20260916-010127"
+          "20260916-010127",
+          "20260919-160338"
         ],
         "Canary": [
-          "20260916-010127"
+          "20260916-010127",
+          "20260919-160338"
         ],
         "Live": [
           "20260916-010127"
@@ -539,6 +541,23 @@
               "zip_size": 17223135,
               "filetable_url": "https://github.com/ArtificialNecessity/AN_ReleasePublish/releases/download/monitor-20260916-010127/Monitor-20260916-010127-win-x64.filetable.json",
               "filetable_sha256": "be57c773b90ec33b569ce9bf548e0451e3f44092fbf26a17a31bab35cb227567",
+              "cas_complete": true
+            }
+          }
+        },
+        "20260919-160338": {
+          "published_at": "2026-09-19T16:04:25.824608+00:00",
+          "release_notes": "",
+          "notes_url": "https://github.com/ArtificialNecessity/AN_ReleasePublish/releases/tag/monitor-20260919-160338",
+          "pin": false,
+          "assets": {
+            "win-x64": {
+              "entry_executable": "AN.Monitor.exe",
+              "zip_url": "https://github.com/ArtificialNecessity/AN_ReleasePublish/releases/download/monitor-20260919-160338/Monitor-20260919-160338-win-x64.zip",
+              "zip_sha256": "cb234e24b27bd314fa588d69107808f7d87f4bed906c82789b68a6f8cc8fb7da",
+              "zip_size": 17256725,
+              "filetable_url": "https://github.com/ArtificialNecessity/AN_ReleasePublish/releases/download/monitor-20260919-160338/Monitor-20260919-160338-win-x64.filetable.json",
+              "filetable_sha256": "2776430095a62f9d18d3a8118b76071b9d125980fca8e46a192fa8591735b4cd",
               "cas_complete": true
             }
           }
