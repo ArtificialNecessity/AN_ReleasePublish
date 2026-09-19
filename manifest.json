@@ -1,6 +1,6 @@
 {
   "schema_version": 3,
-  "generated_at": "2026-09-19T17:18:21.6326143+00:00",
+  "generated_at": "2026-09-19T18:11:41.7481196+00:00",
   "runtime": {
     "dotnet_major": 10,
     "min_version": "10.0.0",
@@ -510,20 +510,22 @@
       "signed": false,
       "listed": true,
       "channels": {
-        "Daily": "20260919-171749",
-        "Canary": "20260919-171749",
+        "Daily": "20260919-181113",
+        "Canary": "20260919-181113",
         "Live": "20260916-010127"
       },
       "channel_history": {
         "Daily": [
           "20260916-010127",
           "20260919-160338",
-          "20260919-171749"
+          "20260919-171749",
+          "20260919-181113"
         ],
         "Canary": [
           "20260916-010127",
           "20260919-160338",
-          "20260919-171749"
+          "20260919-171749",
+          "20260919-181113"
         ],
         "Live": [
           "20260916-010127"
@@ -577,6 +579,23 @@
               "zip_size": 17256840,
               "filetable_url": "https://github.com/ArtificialNecessity/AN_ReleasePublish/releases/download/monitor-20260919-171749/Monitor-20260919-171749-win-x64.filetable.json",
               "filetable_sha256": "df7b24719724fb78343ec127795f77fb19a8c371580b018a929df71a434ff3af",
+              "cas_complete": true
+            }
+          }
+        },
+        "20260919-181113": {
+          "published_at": "2026-09-19T18:11:41.739562+00:00",
+          "release_notes": "",
+          "notes_url": "https://github.com/ArtificialNecessity/AN_ReleasePublish/releases/tag/monitor-20260919-181113",
+          "pin": false,
+          "assets": {
+            "win-x64": {
+              "entry_executable": "AN.Monitor.exe",
+              "zip_url": "https://github.com/ArtificialNecessity/AN_ReleasePublish/releases/download/monitor-20260919-181113/Monitor-20260919-181113-win-x64.zip",
+              "zip_sha256": "4cfc3ae73f83cb315fc2c77d284dc97b61c1049a2acedc547c5e4de82fe3bfb2",
+              "zip_size": 17301814,
+              "filetable_url": "https://github.com/ArtificialNecessity/AN_ReleasePublish/releases/download/monitor-20260919-181113/Monitor-20260919-181113-win-x64.filetable.json",
+              "filetable_sha256": "3f194d028fd05389eefa8062a57b9f33b3782aa88d40c5d8f4d02ff5e72776cd",
               "cas_complete": true
             }
           }
