@@ -1,6 +1,6 @@
 {
   "schema_version": 3,
-  "generated_at": "2026-09-19T18:11:55.7967839+00:00",
+  "generated_at": "2026-09-20T00:49:29.5792843+00:00",
   "runtime": {
     "dotnet_major": 10,
     "min_version": "10.0.0",
@@ -404,18 +404,20 @@
       "signed": false,
       "listed": true,
       "channels": {
-        "Daily": "20260918-200509",
-        "Canary": "20260918-200509",
+        "Daily": "20260920-004747",
+        "Canary": "20260920-004747",
         "Live": "20260918-200509"
       },
       "channel_history": {
         "Daily": [
           "20260915-012810",
-          "20260918-200509"
+          "20260918-200509",
+          "20260920-004747"
         ],
         "Canary": [
           "20260915-012810",
-          "20260918-200509"
+          "20260918-200509",
+          "20260920-004747"
         ],
         "Live": [
           "20260915-012810",
@@ -453,6 +455,23 @@
               "zip_size": 35239259,
               "filetable_url": "https://github.com/ArtificialNecessity/AN_ReleasePublish/releases/download/safepdf-20260918-200509/SafePDF-20260918-200509-win-x64.filetable.json",
               "filetable_sha256": "3da169b78e0b267daa709ffea6c76e4e94db1de6565bb800e8b4d242ded02003",
+              "cas_complete": true
+            }
+          }
+        },
+        "20260920-004747": {
+          "published_at": "2026-09-20T00:49:29.570502+00:00",
+          "release_notes": "",
+          "notes_url": "https://github.com/ArtificialNecessity/AN_ReleasePublish/releases/tag/safepdf-20260920-004747",
+          "pin": false,
+          "assets": {
+            "win-x64": {
+              "entry_executable": "AN.SafePdfViewer.exe",
+              "zip_url": "https://github.com/ArtificialNecessity/AN_ReleasePublish/releases/download/safepdf-20260920-004747/SafePDF-20260920-004747-win-x64.zip",
+              "zip_sha256": "b5c757a1eef85f9ea8fdb7191f2d065c20962e92278e377db82be44bbadc9d73",
+              "zip_size": 35260948,
+              "filetable_url": "https://github.com/ArtificialNecessity/AN_ReleasePublish/releases/download/safepdf-20260920-004747/SafePDF-20260920-004747-win-x64.filetable.json",
+              "filetable_sha256": "6e6a1eeb0d315ba16242be1be768bf8b403421cf5c58e263f9f2ea575aa363e6",
               "cas_complete": true
             }
           }
