@@ -1,6 +1,6 @@
 {
   "schema_version": 3,
-  "generated_at": "2026-09-20T00:53:19.5453599+00:00",
+  "generated_at": "2026-09-24T20:48:25.193733+00:00",
   "runtime": {
     "dotnet_major": 10,
     "min_version": "10.0.0",
@@ -26,19 +26,21 @@
       "signed": false,
       "listed": true,
       "channels": {
-        "Daily": "20260917-041338",
-        "Canary": "20260917-041338",
+        "Daily": "20260924-204410",
+        "Canary": "20260924-204410",
         "Live": "20260912-232027"
       },
       "channel_history": {
         "Daily": [
           "20260912-231859",
           "20260912-232027",
-          "20260917-041338"
+          "20260917-041338",
+          "20260924-204410"
         ],
         "Canary": [
           "20260912-232027",
-          "20260917-041338"
+          "20260917-041338",
+          "20260924-204410"
         ],
         "Live": [
           "20260912-232027"
@@ -92,6 +94,23 @@
               "zip_size": 20361646,
               "filetable_url": "https://github.com/ArtificialNecessity/AN_ReleasePublish/releases/download/pixelstudio-20260917-041338/PixelStudio-20260917-041338-win-x64.filetable.json",
               "filetable_sha256": "1ac231529c6bdac6531015fe820cb0582c9ee335fe5587f8153cb54b6a2d36ec",
+              "cas_complete": true
+            }
+          }
+        },
+        "20260924-204410": {
+          "published_at": "2026-09-24T20:48:25.1834232+00:00",
+          "release_notes": "",
+          "notes_url": "https://github.com/ArtificialNecessity/AN_ReleasePublish/releases/tag/pixelstudio-20260924-204410",
+          "pin": false,
+          "assets": {
+            "win-x64": {
+              "entry_executable": "AN.PixelStudio.exe",
+              "zip_url": "https://github.com/ArtificialNecessity/AN_ReleasePublish/releases/download/pixelstudio-20260924-204410/PixelStudio-20260924-204410-win-x64.zip",
+              "zip_sha256": "edec1a09cbcce0a9e4f9028a257b6599bc10c03f8ab2066a39a05fd532eb8e2d",
+              "zip_size": 20462743,
+              "filetable_url": "https://github.com/ArtificialNecessity/AN_ReleasePublish/releases/download/pixelstudio-20260924-204410/PixelStudio-20260924-204410-win-x64.filetable.json",
+              "filetable_sha256": "c7ec4032ec2eb267745b672004cf2ecc4b746e55c00db48b01df578bee98aa32",
               "cas_complete": true
             }
           }
