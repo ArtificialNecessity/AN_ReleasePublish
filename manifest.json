@@ -1,6 +1,6 @@
 {
   "schema_version": 3,
-  "generated_at": "2026-09-25T05:45:56.075409+00:00",
+  "generated_at": "2026-09-25T05:46:20.516496+00:00",
   "runtime": {
     "dotnet_major": 10,
     "min_version": "10.0.0",
@@ -503,6 +503,7 @@
       "dir_name": "Maestro",
       "description": "Mirica Desktop Coordinator and tabbed application manager",
       "icon_url": "https://releases.artificialnecessity.com/icons/maestro.png",
+      "shim_url": "https://github.com/ArtificialNecessity/AN_ReleasePublish/releases/download/shims/Maestro-Setup.exe",
       "takeover_pipe_name": "MiricaCoordinator",
       "retain_builds": 3,
       "signed": false,
