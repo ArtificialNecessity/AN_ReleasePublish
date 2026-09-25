@@ -1,6 +1,6 @@
 {
   "schema_version": 3,
-  "generated_at": "2026-09-24T20:48:25.193733+00:00",
+  "generated_at": "2026-09-25T00:57:06.5023275+00:00",
   "runtime": {
     "dotnet_major": 10,
     "min_version": "10.0.0",
@@ -508,15 +508,17 @@
       "signed": false,
       "listed": true,
       "channels": {
-        "Daily": "20260915-022718",
-        "Canary": "20260915-022718"
+        "Daily": "20260925-005529",
+        "Canary": "20260925-005529"
       },
       "channel_history": {
         "Daily": [
-          "20260915-022718"
+          "20260915-022718",
+          "20260925-005529"
         ],
         "Canary": [
-          "20260915-022718"
+          "20260915-022718",
+          "20260925-005529"
         ]
       },
       "versions": {
@@ -533,6 +535,23 @@
               "zip_size": 15052107,
               "filetable_url": "https://github.com/ArtificialNecessity/AN_ReleasePublish/releases/download/maestro-20260915-022718/Maestro-20260915-022718-win-x64.filetable.json",
               "filetable_sha256": "4df67c5a8eff71ca0cc2cd00e7a3a6f70667910f2502101423f144cdf1785f85",
+              "cas_complete": true
+            }
+          }
+        },
+        "20260925-005529": {
+          "published_at": "2026-09-25T00:57:06.4911058+00:00",
+          "release_notes": "",
+          "notes_url": "https://github.com/ArtificialNecessity/AN_ReleasePublish/releases/tag/maestro-20260925-005529",
+          "pin": false,
+          "assets": {
+            "win-x64": {
+              "entry_executable": "ArtificialNecessity.MiricaDesktopCoordinator.exe",
+              "zip_url": "https://github.com/ArtificialNecessity/AN_ReleasePublish/releases/download/maestro-20260925-005529/Maestro-20260925-005529-win-x64.zip",
+              "zip_sha256": "5b22baaaaa7490f3b01c15c624431fc14e6e02733c7d64c9dc3113ed117d4eb7",
+              "zip_size": 16361096,
+              "filetable_url": "https://github.com/ArtificialNecessity/AN_ReleasePublish/releases/download/maestro-20260925-005529/Maestro-20260925-005529-win-x64.filetable.json",
+              "filetable_sha256": "c6afc646ba708e7f1493f70ad0916f6c181630b21f150d98516ccd6f5978d426",
               "cas_complete": true
             }
           }
