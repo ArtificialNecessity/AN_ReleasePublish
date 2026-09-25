@@ -1,6 +1,6 @@
 {
   "schema_version": 3,
-  "generated_at": "2026-09-25T15:13:37.9925261+00:00",
+  "generated_at": "2026-09-25T17:35:06.8609892+00:00",
   "runtime": {
     "dotnet_major": 10,
     "min_version": "10.0.0",
@@ -292,18 +292,20 @@
       "signed": false,
       "listed": true,
       "channels": {
-        "Daily": "20260914-055629",
-        "Canary": "20260914-055629",
+        "Daily": "20260925-173341",
+        "Canary": "20260925-173341",
         "Live": "20260914-055629"
       },
       "channel_history": {
         "Daily": [
           "20260914-054612",
-          "20260914-055629"
+          "20260914-055629",
+          "20260925-173341"
         ],
         "Canary": [
           "20260914-054612",
-          "20260914-055629"
+          "20260914-055629",
+          "20260925-173341"
         ],
         "Live": [
           "20260914-054612",
@@ -341,6 +343,23 @@
               "zip_size": 33310134,
               "filetable_url": "https://github.com/ArtificialNecessity/AN_ReleasePublish/releases/download/musicstudio-20260914-055629/MusicStudio-20260914-055629-win-x64.filetable.json",
               "filetable_sha256": "9d6de0a30c47216499cb5089b417f237505bfa782fe542d857d08acd8d1169ff",
+              "cas_complete": true
+            }
+          }
+        },
+        "20260925-173341": {
+          "published_at": "2026-09-25T17:35:06.8520404+00:00",
+          "release_notes": "",
+          "notes_url": "https://github.com/ArtificialNecessity/AN_ReleasePublish/releases/tag/musicstudio-20260925-173341",
+          "pin": false,
+          "assets": {
+            "win-x64": {
+              "entry_executable": "AN.MusicStudio.exe",
+              "zip_url": "https://github.com/ArtificialNecessity/AN_ReleasePublish/releases/download/musicstudio-20260925-173341/MusicStudio-20260925-173341-win-x64.zip",
+              "zip_sha256": "62e8b4ec1ae0643685572e5d6fcf2867fb07650ea56e96c2107891fc382412f8",
+              "zip_size": 33535601,
+              "filetable_url": "https://github.com/ArtificialNecessity/AN_ReleasePublish/releases/download/musicstudio-20260925-173341/MusicStudio-20260925-173341-win-x64.filetable.json",
+              "filetable_sha256": "3d7dc8194c41e82920e497f5ee3c2a828291d71064a029706d44997945f0f10b",
               "cas_complete": true
             }
           }
