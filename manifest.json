@@ -1,6 +1,6 @@
 {
   "schema_version": 3,
-  "generated_at": "2026-10-29T20:03:10.137352+00:00",
+  "generated_at": "2026-10-29T20:05:46.8903957+00:00",
   "runtime": {
     "dotnet_major": 10,
     "min_version": "10.0.0",
@@ -378,8 +378,8 @@
       "signed": false,
       "listed": true,
       "channels": {
-        "Daily": "20261015-072753",
-        "Canary": "20261015-072753",
+        "Daily": "20261029-200327",
+        "Canary": "20261029-200327",
         "Live": "20260915-013008"
       },
       "channel_history": {
@@ -387,13 +387,15 @@
           "20260915-011553",
           "20260915-013008",
           "20261006-155026",
-          "20261015-072753"
+          "20261015-072753",
+          "20261029-200327"
         ],
         "Canary": [
           "20260915-011553",
           "20260915-013008",
           "20261006-155026",
-          "20261015-072753"
+          "20261015-072753",
+          "20261029-200327"
         ],
         "Live": [
           "20260915-011553",
@@ -465,6 +467,23 @@
               "zip_size": 75146973,
               "filetable_url": "https://github.com/ArtificialNecessity/AN_ReleasePublish/releases/download/mirica-20261015-072753/Mirica-20261015-072753-win-x64.filetable.json",
               "filetable_sha256": "e541797892f8f4e50a22a7a07a6bda43e5321a570daf0071852f4270d3676624",
+              "cas_complete": true
+            }
+          }
+        },
+        "20261029-200327": {
+          "published_at": "2026-10-29T20:05:46.8817655+00:00",
+          "release_notes": "",
+          "notes_url": "https://github.com/ArtificialNecessity/AN_ReleasePublish/releases/tag/mirica-20261029-200327",
+          "pin": false,
+          "assets": {
+            "win-x64": {
+              "entry_executable": "Mirica.Desktop.exe",
+              "zip_url": "https://github.com/ArtificialNecessity/AN_ReleasePublish/releases/download/mirica-20261029-200327/Mirica-20261029-200327-win-x64.zip",
+              "zip_sha256": "1cc1f3eb892f7789d6d398da5ff206efe397917b9e22bdcec455e3409a867b42",
+              "zip_size": 75177434,
+              "filetable_url": "https://github.com/ArtificialNecessity/AN_ReleasePublish/releases/download/mirica-20261029-200327/Mirica-20261029-200327-win-x64.filetable.json",
+              "filetable_sha256": "805f30aa5680349d29923f0f7ad5f81ee8f766ee4aff9aa9c8bd0177eabb08e4",
               "cas_complete": true
             }
           }
